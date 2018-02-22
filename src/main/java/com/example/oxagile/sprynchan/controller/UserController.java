@@ -12,12 +12,12 @@ import com.example.oxagile.sprynchan.domain.User;
 
 @RestController
 @RequestMapping("/api/v1")
-public class HelloController {
+public class UserController {
 
     private final UserRepository userRepository;
 
     @Autowired
-    public HelloController(UserRepository userRepository) {
+    public UserController(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
