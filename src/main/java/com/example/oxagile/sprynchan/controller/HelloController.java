@@ -21,16 +21,9 @@ public class HelloController {
         this.userRepository = userRepository;
     }
 
-    @RequestMapping(value = "/health", method = RequestMethod.GET)
-    public String verifyHealth() {
-        return "Healthy фываaa";
-    }
-
-
-    @RequestMapping(value = "/user", method = RequestMethod.GET)
+    @RequestMapping(value = "/users", method = RequestMethod.GET)
     public List<User> get() {
         return userRepository.findAll();
     }
-
 
 }
